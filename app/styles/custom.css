@@ -68,22 +68,22 @@ body {
 }
 
 /* fancy hover */
-.col-md-7:hover > * {
+.col-xs-7:hover > * {
     transition:1s;
     background-color: #c9e9fd;
 }
 
-.col-md-5:hover > * {
+.col-xs-5:hover > * {
     transition:1s;
     background-color: #cffecc;
 }
 
 /* un hover */
-.col-md-5 > * {
+.col-xs-5 > * {
     transition:1s;
 }
 
-.col-md-7 > * {
+.col-xs-7 > * {
     transition:1s;
 }
 
