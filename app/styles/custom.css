@@ -48,10 +48,61 @@ body {
     color: #009a88;
 }
 
-#navbar-items * {
+#navbar-items a {
     color: #009a88;
+    transition: .5s;
+}
+
+#navbar-items a:hover {
+    color: #00483f;
 }
 
 #twitter {
     text-align: center;
 }
+
+/* turn off text decoration */
+.row > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* fancy hover */
+.col-md-7:hover > * {
+    transition:1s;
+    background-color: #c9e9fd;
+}
+
+.col-md-5:hover > * {
+    transition:1s;
+    background-color: #cffecc;
+}
+
+/* un hover */
+.col-md-5 > * {
+    transition:1s;
+}
+
+.col-md-7 > * {
+    transition:1s;
+}
+
+/* light teal */
+/*background-color: #8dfff2;*/
+
+a > button{
+    transition: 1s;
+}
+
+/* default bg colors */
+* {
+  border-radius: 0 !important;
+}
+
+/*.jumbotron, .panel-heading, list-group {
+    background-color: #FBFFD0;
+}
+
+.navbar, .footer, .panel, .list-group-item {
+    background-color: #FBFDE5;
+}*/
