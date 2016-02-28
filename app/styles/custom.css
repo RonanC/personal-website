@@ -1,0 +1,57 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #009a88;
+  /*color: #00c7af;*/
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  
+  text-align: center;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+* {
+    font-family: Lato;
+    /*font-family: 'Anonymous Pro';*/
+}
+
+#profile_image {
+    width: 20em;
+}
+
+body {
+    background-image: url("../images/bg-patterns/skulls.png");
+    background-repeat: repeat;
+}
+
+#header * {
+    color: #009a88;
+    font-family: 'Anonymous Pro';
+}
+
+#header {
+    color: #009a88;
+}
+
+#navbar-items * {
+    color: #009a88;
+}
+
+#twitter {
+    text-align: center;
+}
