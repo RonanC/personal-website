@@ -408,31 +408,6 @@ module.exports = function (grunt) {
                 src: '{,*/}*.css'
             }
         },
-        
-        // stack overflow FA fix
-        copyFA: {
-            dist: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= config.app %>',
-                    dest: '<%= config.dist %>',
-                    src: [
-                        '*.{ico,png,txt}',
-                        '.htaccess',
-                        'images/{,*/}*.webp',
-                        '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*'
-                    ]
-                }, {
-                        expand: true,
-                        dot: true,
-                        cwd: 'bower_components/bootstrap/dist', // change this for font-awesome
-                        src: ['fonts/*.*'],
-                        dest: '<%= config.dist %>'
-                    }]
-            }
-        },
 
         // Run some tasks in parallel to speed up the build process
         concurrent: {
@@ -498,7 +473,6 @@ module.exports = function (grunt) {
         'concat',
         'ngAnnotate',
         'copy:dist',
-        'copyFA',
         'cdnify',
         'cssmin',
         'uglify',
