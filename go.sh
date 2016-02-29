@@ -2,7 +2,7 @@
 
 echo 'running grunt, git add, git commit, git push and heroku open'
 
-grunt -f 
+grunt
 git add .
 git commit -a
 git push origin master
