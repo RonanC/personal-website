@@ -395,8 +395,9 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/font-awesome',
-                        src: 'fonts/*',
+                        dot: true,
+                        cwd: 'bower_components/font-awesome/dist', // change this for font-awesome
+                        src: ['fonts/*.*'],
                         dest: '<%= yeoman.dist %>'
                     }]
             },
@@ -405,6 +406,31 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
+            }
+        },
+        
+        // stack overflow FA fix
+        copyFA: {
+            dist: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>',
+                    src: [
+                        '*.{ico,png,txt}',
+                        '.htaccess',
+                        'images/{,*/}*.webp',
+                        '{,*/}*.html',
+                        'styles/fonts/{,*/}*.*'
+                    ]
+                }, {
+                        expand: true,
+                        dot: true,
+                        cwd: 'bower_components/bootstrap/dist', // change this for font-awesome
+                        src: ['fonts/*.*'],
+                        dest: '<%= config.dist %>'
+                    }]
             }
         },
 
@@ -472,6 +498,7 @@ module.exports = function (grunt) {
         'concat',
         'ngAnnotate',
         'copy:dist',
+        'copyFA',
         'cdnify',
         'cssmin',
         'uglify',
