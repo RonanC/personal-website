@@ -4,10 +4,12 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -16,8 +18,7 @@ body {
   /*color: #00c7af;*/
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
-  
+  background-color: #f5f5f5;  
   text-align: center;
 }
 
@@ -26,8 +27,7 @@ body {
 -------------------------------------------------- */
 
 * {
-    font-family: Lato;
-    /*font-family: 'Anonymous Pro';*/
+    font-family: Lato, sans-serif;
 }
 
 #profile_image {
@@ -41,7 +41,7 @@ body {
 
 #header * {
     color: #009a88;
-    font-family: 'Anonymous Pro';
+    font-family: 'Anonymous Pro', cursive;
 }
 
 #header {
