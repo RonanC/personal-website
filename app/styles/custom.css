@@ -37,6 +37,7 @@ body {
 body {
     background-image: url("../images/bg-patterns/skulls.png");
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 #header * {
@@ -106,3 +107,31 @@ a > button{
 .navbar, .footer, .panel, .list-group-item {
     background-color: #FBFDE5;
 }*/
+
+/* GENERAL */
+a:hover {
+    text-decoration: none;
+}
+
+html {
+    margin-top: 7em;
+}
+
+/* PROJECTS */
+.project a:hover {
+    transition: .5s;
+}
+
+.project a {
+    transition: .5s;
+}
+
+.project .panel-heading:hover{
+    text-decoration: none;
+    background-color: #FBFFD0;
+    transition: .5s;
+}
+
+.project .panel-heading{
+    transition: .5s;
+}
