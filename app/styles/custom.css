@@ -54,6 +54,15 @@ body {
     margin: auto;
 }
 
+.center-div{
+  margin: auto;
+  text-align:center;
+}
+
+/*#navbar-items {
+  text-align:center;
+}*/
+
 .med-card {
     max-width: 70em;
     margin: auto;
