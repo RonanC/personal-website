@@ -49,6 +49,16 @@ body {
     color: #009a88;
 }
 
+.sm-card {
+    max-width: 50em;
+    margin: auto;
+}
+
+.med-card {
+    max-width: 70em;
+    margin: auto;
+}
+
 #navbar-items a {
     color: #009a88;
     transition: .5s;
@@ -142,3 +152,7 @@ html {
         max-width: 1970px;
     }
 }
+
+/*.project {
+  min-width: 40em;
+}*/
