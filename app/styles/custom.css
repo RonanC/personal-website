@@ -47,6 +47,7 @@ body {
 
 #header {
     color: #009a88;
+    padding-top: 2em;
 }
 
 .sm-card {
@@ -133,7 +134,7 @@ a:hover {
 }
 
 html {
-    margin-top: 7em;
+    margin-top: 3em;
 }
 
 /* PROJECTS */
