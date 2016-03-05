@@ -49,6 +49,11 @@ angular
         controller: 'ProjectsCtrl',
         controllerAs: 'projects'
       })
+      .when('/webdev', {
+        templateUrl: 'views/webdev.html',
+        controller: 'WebdevCtrl',
+        controllerAs: 'webdev'
+      })
       .otherwise({
         redirectTo: '/'
       });

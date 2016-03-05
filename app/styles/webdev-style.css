@@ -1,0 +1,109 @@
+body {
+  padding-top: 50px;
+}
+
+.container .jumbotron {
+  /*border-radius: 40px!important;*/
+  /*width: 120%!important;*/
+  /*padding:0!important;*/
+  border:0!important;
+  margin:0!important;
+}
+
+.specialjum {
+  /*padding:0!important;*/
+  width: 100%;
+}
+
+img.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  margin: auto;
+  width: 20%;
+  /*border: 3px solid #73AD21;*/
+  padding: 10px;
+}
+
+.tweet {
+  margin: auto;
+  width: 30%;
+  /*border: 3px solid #73AD21;*/
+  padding: 10px;
+}
+
+.tweet a {
+
+}
+
+a {
+  color:#2a9fd6;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+a:hover {
+  color:#05577d;
+  text-decoration: none;
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+h2 {
+  font-size: 3em;
+  color: black;
+}
+
+h2 a {
+  color: black;
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+h2 a:hover {
+  color: #4f4f4f;
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+ul {
+  font-family: sans-serif;
+}
+
+pre {
+  background-color: white;
+}
+
+/* h2 remove styling */
+/*h2 a:visited {
+text-decoration:none;
+}
+
+h2 a:active {
+text-decoration:none;
+}*/
+
+
+a, u {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+

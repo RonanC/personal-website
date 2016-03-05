@@ -135,3 +135,10 @@ html {
 .project .panel-heading{
     transition: .5s;
 }
+
+/* widen container */
+@media (min-width: 40em) {
+    .container{
+        max-width: 1970px;
+    }
+}
