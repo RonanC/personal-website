@@ -6,10 +6,7 @@ html {
     min-height: 100%;
 }
 
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-}
+
 
 .footer {
     position: absolute;
@@ -149,10 +146,6 @@ a:hover {
     text-decoration: none;
 }
 
-html {
-    margin-top: 3em;
-}
-
 
 /* PROJECTS */
 
@@ -227,13 +220,14 @@ html {
 }
 
 #portfolio * .panel-body > h3 {
-  text-align: center;
+    text-align: center;
 }
 
 #portfolio * .panel-body > img {
-  /*text-align: center;*/
-  /*height: 25em;*/
+    /*text-align: center;*/
+    /*height: 25em;*/
 }
+
 
 /*#portrait-width {
   width: 250em;
@@ -243,7 +237,14 @@ html {
   width: 450em;
 }*/
 
+
 /*.landscape-xl {
   width: 450em;
-}*/*/
+}*/
 
+
+body {
+    margin-top: 3em;
+    /* Margin bottom by footer height */
+    margin-bottom: 5em;
+}
