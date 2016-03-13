@@ -1,25 +1,26 @@
 /* Sticky footer styles
 -------------------------------------------------- */
+
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: #009a88;
-  /*color: #00c7af;*/
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;  
-  text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #009a88;
+    /*color: #00c7af;*/
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
 }
 
 
@@ -55,10 +56,11 @@ body {
     margin: auto;
 }
 
-.center-div{
-  margin: auto;
-  text-align:center;
+.center-div {
+    margin: auto;
+    text-align: center;
 }
+
 
 /*#navbar-items {
   text-align:center;
@@ -82,43 +84,55 @@ body {
     text-align: center;
 }
 
+
 /* turn off text decoration */
+
 .row > a {
     text-decoration: none;
     color: inherit;
 }
 
+
 /* fancy hover */
+
 .col-xs-7:hover > * {
-    transition:1s;
+    transition: 1s;
     background-color: #c9e9fd;
 }
 
 .col-xs-5:hover > * {
-    transition:1s;
+    transition: 1s;
     background-color: #cffecc;
 }
 
+
 /* un hover */
+
 .col-xs-5 > * {
-    transition:1s;
-}
-
-.col-xs-7 > * {
-    transition:1s;
-}
-
-/* light teal */
-/*background-color: #8dfff2;*/
-
-a > button{
     transition: 1s;
 }
 
-/* default bg colors */
-* {
-  border-radius: 0 !important;
+.col-xs-7 > * {
+    transition: 1s;
 }
+
+
+/* light teal */
+
+
+/*background-color: #8dfff2;*/
+
+a > button {
+    transition: 1s;
+}
+
+
+/* default bg colors */
+
+* {
+    border-radius: 0 !important;
+}
+
 
 /*.jumbotron, .panel-heading, list-group {
     background-color: #FBFFD0;
@@ -128,7 +142,9 @@ a > button{
     background-color: #FBFDE5;
 }*/
 
+
 /* GENERAL */
+
 a:hover {
     text-decoration: none;
 }
@@ -137,7 +153,9 @@ html {
     margin-top: 3em;
 }
 
+
 /* PROJECTS */
+
 .project a:hover {
     transition: .5s;
 }
@@ -146,23 +164,86 @@ html {
     transition: .5s;
 }
 
-.project .panel-heading:hover{
+.project .panel-heading:hover {
     text-decoration: none;
     background-color: #FBFFD0;
     transition: .5s;
 }
 
-.project .panel-heading{
+.project .panel-heading {
     transition: .5s;
 }
 
+
 /* widen container */
+
 @media (min-width: 40em) {
-    .container{
+    .container {
         max-width: 1970px;
     }
 }
 
+
 /*.project {
   min-width: 40em;
 }*/
+
+
+/* portfolio styles */
+
+#portfolio * small {
+    color: #858585;
+}
+
+#portfolio * .panel-body > small {
+    background-color: pink;
+    color: brown;
+    padding: 0.5em;
+    /*font-size: 100px;*/
+}
+
+#portfolio * .panel-body > ul {
+    display: inline-block;
+    /*position: absolute;*/
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#portfolio * .panel-body > ul > li {
+    display: inline-block;
+    /*white-space: nowrap;*/
+    /*margin-right: 1.5em;*/
+    font-family: Arial;
+    background-color: #178CFF;
+    color: #FFFFFF;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.4em;
+    margin-left: 0.3em;
+    margin-right: 0.3em
+}
+
+#portfolio * .panel-body > h3 {
+  text-align: center;
+}
+
+#portfolio * .panel-body > img {
+  /*text-align: center;*/
+  /*height: 25em;*/
+}
+
+/*#portrait-width {
+  width: 250em;
+}
+
+.landscape {
+  width: 450em;
+}*/
+
+/*.landscape-xl {
+  width: 450em;
+}*/*/
+
