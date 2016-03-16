@@ -248,3 +248,22 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 5em;
 }
+
+
+/*privacy policy */
+
+.privpol .panel {
+  margin: auto;
+  width: 75%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background-color: #F9F9F9;
+}
+
+.privpol .panel h1 {
+    color: #1F3E9C;
+}
+
+.privpol .panel h2 {
+    color: green;
+}

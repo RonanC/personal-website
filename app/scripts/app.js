@@ -54,6 +54,11 @@ angular
         controller: 'WebdevCtrl',
         controllerAs: 'webdev'
       })
+      .when('/gmitcat-priv-pol', {
+        templateUrl: 'views/gmitcat-priv-pol.html',
+        controller: 'GmitcatPrivPolCtrl',
+        controllerAs: 'gmitcatPrivPol'
+      })
       .otherwise({
         redirectTo: '/'
       });
