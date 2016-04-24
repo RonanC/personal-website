@@ -14,7 +14,7 @@
 
     // fyp presentation
     app.get('/fyp-presentation', function(req, res) {
-        res.sendfile(__dirname + '/external-docs/GMIT-Catering');
+        res.sendfile(__dirname + '/external-docs/GMIT-Catering/index.html');
     });
 
     app.listen(port, function() {
