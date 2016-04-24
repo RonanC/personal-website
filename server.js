@@ -7,6 +7,7 @@
 
     app.use(express.static(__dirname + '/dist/'));
     app.use(express.static(__dirname + '/external-docs/'));
+    app.use(express.static(__dirname + '/external-docs/GMIT-Catering/'));
 
     // The advantages of using JavaScript for full stack development with an emphasis on Node.js (Ronan Connolly, 2015)
     app.get('/js-advantages-in-fullstack-dev', function(req, res) {
@@ -18,6 +19,7 @@
 
     // fyp presentation
     app.get('/fyp-pres', function(req, res) {
+        app.use(express.static(__dirname + '/external-docs/GMIT-Catering/'));
         res.sendfile(__dirname + '/external-docs/GMIT-Catering/index.html');
     });
 
