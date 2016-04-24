@@ -6,14 +6,18 @@
     var port = process.env.PORT || 8080;
 
     app.use(express.static(__dirname + '/dist/'));
+    app.use(express.static(__dirname + '/external-docs/'));
 
     // The advantages of using JavaScript for full stack development with an emphasis on Node.js (Ronan Connolly, 2015)
     app.get('/js-advantages-in-fullstack-dev', function(req, res) {
         res.sendfile(__dirname + '/external-docs/js-advantages-in-fullstack-dev-ronanconnolly-2015.pdf');
     });
+    app.get('/js-lit-review', function(req, res) {
+        res.sendfile(__dirname + '/external-docs/js-advantages-in-fullstack-dev-ronanconnolly-2015.pdf');
+    });
 
     // fyp presentation
-    app.get('/fyp-presentation', function(req, res) {
+    app.get('/fyp-pres', function(req, res) {
         res.sendfile(__dirname + '/external-docs/GMIT-Catering/index.html');
     });
 
