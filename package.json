@@ -40,6 +40,7 @@
     "jshint-stylish": "^1.0.0",
     "karma-jasmine": "^0.3.7",
     "karma-phantomjs-launcher": "^1.0.0",
-    "autoprefixer-core": "^5.2.1"
+    "autoprefixer-core": "^5.2.1",
+    "time-grunt": "^1.0.0"
   }
 }
