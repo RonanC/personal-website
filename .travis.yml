@@ -1,6 +1,42 @@
 language: node_js
 node_js:
-  - '0.10'
+  - 4.2
+env:
+- MY_VAR=EverythingIsAwesome
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: d5+IHaoH7JK1bHg5zRFj4Cwjkzmm8ork6UiKQGIihBC1cbeWGUJ4HEXGudxqLXSABSkAkCdAOsjs5LTvHYlqE8ArCUbdZ/bQCIS/4m5/3DwcQDhSLAAy/trl15tbqSS/K6LQYoty/TF8y7cEcmR1qd3tiGoY/R0Ru04AcyjzrRyCt0l2xxGDsbWTteCv+t/x84UaiFLmT8vPxWQ46Vea8lRVen1ejPov0ePfn4EbUOTGeLKnbBK4Z0NMVqqKIA1ncbE/MAuA4L56zL5mgC0YdwMS+KJPNRcVgNFhu3iRQYOaFMKvYRCOvgdwqTunpw5LxnMSlcv2pqDSPbi9KmbTqoWwCz2Knz7cIa2zlsq1ThTAVlXsPi3paRbwrEGG+7xOHBhT3q2lwSezxDo41Z4Yxk4RdxxhutTkwiF1Thb4F2P1QO3mXDZbF7Jb+CSCrL+oAB9Kit8iQN4Pb2MK3wPP0p6GjCO7kg7Bu2tHrf16xyxrodgG5QYD7JNMtNKevVNhe97enzf2h2wo8Uqxm980fvwktKgQiWOo3L7q/UZ83XgnDs0eJL5YcAuUV/8y2LJ6QlOpewVdtijzmU3C34SWOlk+3HsEO7Rws5cZG866O2etGMPZS73EZFWPtRtve08xfQkFjWckcvx9ciUcuIElypQm168u0tLjWyjWVsFXT2Y=
+#   app: ronanconnolly
+#   on:
+#     repo: RonanC/personal-website
+
+before_install:
+ - npm install connect
+ # - "sudo apt-get install screen"
+ # - "pwd"
+ - ls
+
 before_script:
-  - 'npm install -g bower grunt-cli'
-  - 'bower install'
+ # - "pwd"
+ # - "echo \"before script\""
+ # - "screen -d -m npm start"
+ # - "pwd"
+ - ls
+ - export DISPLAY=:99.0
+ - sh -e /etc/init.d/xvfb start
+ # - npm install connect
+ - npm start &
+ - sleep 5
+ - ls
+
+script:
+  - npm test
+
+# services:
+#   - mongodb
+# sudo: true
+
+notifications:
+  email:
+    - hi@ronanconnolly.ie
