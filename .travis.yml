@@ -13,6 +13,7 @@ env:
 
 before_install:
  - npm install connect
+ - npm install bower
  # - "sudo apt-get install screen"
  # - "pwd"
  - ls
