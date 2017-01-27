@@ -1,0 +1,36 @@
+.malicious {
+  /* set it to that of the page*/
+  color: #f3f5f6;
+  
+  /* make it small*/
+  font-size: 0px;
+  
+  /* move it out of the way*/
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  height: 0px;
+  z-index: -100;
+  display: inline-block;
+  
+  /* make it un-selectable*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+}
+
+.posts-code {
+  font-family: monospace;
+  color: green;
+}
+
+.posts-code-container {
+  background:#F8F8FF; 
+  border:black dashed 1px; 
+  padding:6px;
+  /*background-color: #c6ffdc ;*/
+  display: inline;
+}
